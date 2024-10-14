@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="style.css" />
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>TP2</title>
@@ -11,20 +12,8 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <!-- Place favicon.ico in the root directory -->
 
-  <style>
-    body {
-      background-color: #e9ebee;
-      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
-        "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-      font-size: 16px;
-      margin: 0 auto;
-      max-width: 800px;
-    }
-  </style>
+ 
 
-  <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-  <!--<link rel="stylesheet" href="style.css">-->
-  <!--<script src="js/main.js"></script>-->
 </head>
 
 <body>
@@ -32,9 +21,38 @@
     <a href="..">🏠 Index</a> / TP2
   </nav>
   <h1>tp2</h1>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <img src="../galilee.png" alt="Logo Galilee" />
+  <form action="action.html" method="get">
+    
+    <p>
+      <label for="name">Nom</label>
+      <input type="text" name="name" minlength="2" maxlength="20" required />
+      <span class="icon-ok">✔</span>
+
+    </p>
+    <p>
+      <label for="firstname">Prénom</label>
+      <input type="text" name="firstname" minlength="2" maxlength="20" required />
+      <span class="icon-ok">✔</span>
+    </p>
+    <p>
+      <label for="birthday">Date de naissance</label>
+      <input type="date" name="birthday" minlength="2" maxlength="20" required />
+      <span class="icon-ok">✔</span>
+    </p>
+    <p>
+      <label for="adresse">Adresse</label>
+      <input type="text" name="ad" minlength="2" maxlength="20" required />
+      <span class="icon-ok">✔</span>
+    </p>
+    <p>
+      <label for="Email">Email</label>
+      <input type="text" name="email" minlength="2" maxlength="20" required />
+      <span class="icon-ok">✔</span>
+    </p>
+    <input  class="btn-primary"    type="submit" />
+ 
+  </form>
+
 </body>
 
 </html>
